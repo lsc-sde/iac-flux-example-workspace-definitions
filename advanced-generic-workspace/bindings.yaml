@@ -1,0 +1,21 @@
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: advanced-generic-workspace-jane-doe
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  workspace: advanced-generic-workspace
+  username: "jane.doe@some.org"
+  expires: "2030-01-01"
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: advanced-generic-workspace-joe-bloggs
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  workspace: advanced-generic-workspace
+  username: "joe.bloggs@some.org"
+  expires: "2030-01-01"
