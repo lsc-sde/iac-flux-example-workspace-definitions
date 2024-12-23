@@ -2,8 +2,6 @@ apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspaceBinding
 metadata:
   name: default-generic-workspace-david-smith
-  annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   workspace: default-generic-workspace
   username: "david.smith@some.org"
@@ -13,8 +11,6 @@ apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspaceBinding
 metadata:
   name: default-generic-workspace-jane-doe
-  annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   workspace: default-generic-workspace
   username: "jane.doe@some.org"
